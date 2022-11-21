@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "https://github.com/SShaheeda/aws_tf_vpc.git"
+  source = "git::https://github.com/SShaheeda/aws_tf_vpc.git"
   vpc_cidr = var.ec2_vpc_cidr
   igw_cidr_block = var.ec2_igw_cidr_block
   public_subnet_cidr = var.ec2_public_subnet_cidr
