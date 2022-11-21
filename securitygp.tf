@@ -38,7 +38,7 @@ resource "aws_security_group" "mysgp_nat" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"  
-    cidr_blocks = ["172.168.30.64s/26"]
+    cidr_blocks = ["172.168.30.64/26"]
   }
 
   ingress {
