@@ -1,10 +1,10 @@
 module "vpc" {
-  source = "https://github.com/SShaheeda/aws_tf_vpc.git"
-  vpc_cidr=var.ec2_vpc_cidr
-  igw_cidr_block=var.ec2_igw_cidr_block
-  public_subnet_cidr=var.ec2_public_subnet_cidr
-  private_subnet_cidr=var.ec2_private_subnet_cidr
-  nat_gateway_instance_id=aws_instance.instance_nat.primary_network_interface_id
+  source = "git@github.com:SShaheeda/aws_tf_vpc.git"
+  vpc_cidr = var.ec2_vpc_cidr
+  igw_cidr_block = var.ec2_igw_cidr_block
+  public_subnet_cidr = var.ec2_public_subnet_cidr
+  private_subnet_cidr = var.ec2_private_subnet_cidr
+  nat_gateway_instance_id = aws_instance.instance_nat.primary_network_interface_id
 
 }
 
